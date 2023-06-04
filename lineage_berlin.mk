@@ -24,6 +24,11 @@ $(call inherit-product, device/motorola/berlin/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+TARGET_USE_PIXEL_FINGERPRINT := true
+WITH_GMS := true
+TARGET_CORE_GMS := true
+TARGET_USE_GOOGLE_TELEPHONY := true
+
 PRODUCT_NAME := lineage_berlin
 PRODUCT_DEVICE := berlin
 PRODUCT_MANUFACTURER := motorola
